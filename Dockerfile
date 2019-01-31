@@ -14,4 +14,7 @@ RUN npm run build
 
 #Run image
 FROM nginx
+#EXPOSE is not used by the local docker
+#Used by aws elastic beanstalk to map ports  
+EXPOSE 80
 COPY --from=builder /app/build /usr/share/nginx/html
