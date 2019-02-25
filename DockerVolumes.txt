@@ -1,4 +1,0 @@
-docker run -p 3000:3000 -v /app/node_modules -v $(pwd):/app c3967582b6c2
-
-Mapps the local folder to /app in the container.
-But does not override the containers /app/node_modules
